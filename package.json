@@ -1,19 +1,18 @@
 {
-  "name": "ca-js-express-mongo-music-app",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "start": "node ./bin/www"
-  },
-  "dependencies": {
-    "body-parser": "~1.18.2",
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.6.9",
-    "ejs": "~2.5.7",
-    "express": "^4.16.2",
-    "morgan": "~1.9.0",
-    "serve-favicon": "~2.4.5"
-  },
+  "name": "ca-js-express_mongo_music_app",
+  "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "author": "IsNology <glenn@isnology.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^4.13.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "seed": "node models/seeds.js"
+  }
 }
